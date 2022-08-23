@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enmanuel Ozoria</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a6ef171867.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="/images/EnmanuelLogo.png" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Github</a></li>
+                <li><a href="#">Codewars</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p><span>S</span>oftware <span>D</span>eveloper</p>
+            <h1>Welcome<br>to my page</h1>
+        </div>
+    </div>
+</div>
+<!-- ---------------------about me ----------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/Mydelf.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a software developer with experience coding in C#, Java, Python, HTML, CSS, 
+                    JavaScript, and MySql. I have created numerous different projects that you can 
+                    find on my GitHub link at the top of the page. My experience working in teams goes 
+                    way back to grade-school. I am a team-player and look forward to being a part of 
+                    yours! So what are you waiting for, eh? Hire me! I need a job so I can feed my 
+                    furry friends. Do you want my little chihuahua to starve? Didn't think so! Hire me! 
+                    please. :D</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links active-link" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML/CSS/JS</span><br>Designing Web apps</li>
+                            <li><span>C#</span><br>Creating projects</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Full Stack Developer bootcamp at TrueCoders</li>
+                            <li><span>2021 - 2021</span><br>Computer Progreamming I course at FSC</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br>TrueCoders</li>
+                            <li><span>2021 - Current</span><br>Farmingdale State College</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- --------services-------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Software Development</h2>
+                <p>I can develop stuffs</p>
+                <a href="#">Learn mas</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Software Development</h2>
+                <p>I can develop stuffs</p>
+                <a href="#">Learn mas</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Software Development</h2>
+                <p>I can develop stuffs</p>
+                <a href="#">Learn mas</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------portfolio----------- -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/ticketmaster1.png">
+                <div class="layer">
+                    <h3>Trip Planner</h3>
+                    <p>This website will help you determine the 
+                        best events to hit on your next vacation!</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ticketmaster2.png">
+                <div class="layer">
+                    <h3>Trip Planner</h3>
+                    <p>This website will help you determine the 
+                        best events to hit on your next vacation!</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/ticketmaster3.png">
+                <div class="layer">
+                    <h3>Trip Planner</h3>
+                    <p>This website will help you determine the 
+                        best events to hit on your next vacation!</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+    
+</body>
+</html>
