@@ -10,8 +10,8 @@ html {
 }
 
 body {
-    background: rgb(67, 67, 67);
-    color: whitesmoke
+    background: #CE1126;
+    color: #95c0f0;
 }
 
 #header {
@@ -22,7 +22,7 @@ body {
     background-position: center;  
 }
 .container{
-    padding: 20px 5%;
+    padding: 25px 7%;
 }
 nav {
     display: flex;
@@ -31,7 +31,7 @@ nav {
     flex-wrap: wrap;
 }
 .logo {
-    width: 240px;
+    width: 260px;
 }
 
 nav ul li {
@@ -41,9 +41,9 @@ nav ul li {
 }
 
 nav ul li a {
-    color:aliceblue;
+    color:#95c0f0;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 21px;
     position: relative;
 }
 
@@ -51,7 +51,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background:rgb(42, 32, 146);
+    background:#CE1126;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -63,18 +63,21 @@ nav ul li a:hover::after{
 }
 .header-text{
     margin-top: 15%;
-    font-size: 25px;
-}
-.header-text p span{
-    color: brown;
-    font-size: xx-large;
+    font-size: 50px;
+    text-align: center;
 }
 .header-text h1{
     margin-top: 25px;
     font-size: 40px;
-    text-align:center;
 }
-/* ---------------------about me ----------- */
+.header-text h1 span{
+    color: #CE1126;
+    font-size: 70px;
+}
+.header-text p {
+    color: #0e73e7c2;
+}
+/* ------------------- "About Me" section ------------- */
 #about{
     padding: 80px 0;
     color: whitesmoke;
@@ -85,25 +88,29 @@ nav ul li a:hover::after{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.about-col-1 {
+.column-2 {
     flex-basis: 35%;
 }
-.about-col-1 img{
+.column-2 img{
     width: 100%;
     border-radius: 80px;
 }
-.about-col-2 {
+.column-1 {
     flex-basis: 60%;
 }
 .sub-title{
     font-size: 50px;
     font-weight: 600;
-    color: tomato;
+    color: #3f8ee9;
+    text-align: center;
 }
-
+#about-message {
+    font-size: 30px;
+}
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
+    color: #3f8ee9;
 }
 .tab-links{
     margin-right: 50px;
@@ -132,7 +139,7 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: tomato;
+    color: #3f8ee9;
     font-size: 14px;
 }
 
@@ -163,6 +170,7 @@ nav ul li a:hover::after{
     /* round borders */
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
+    color:#CE1126;
 }
 .services-list div i{
     font-size: 50px;
@@ -175,7 +183,7 @@ nav ul li a:hover::after{
 }
 .services-list div a{
     text-decoration: none;
-    color: aquamarine;
+    color: whitesmoke;
     font-size: 12px;
     margin-top: 20px;
 }
@@ -258,6 +266,7 @@ nav ul li a:hover::after{
     text-decoration: none;
     color: azure;
     transition: background 0.5s;
+    background: #3f8ee9;
 }
 .button:hover {
     background: tomato;
@@ -274,7 +283,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p{
-    color: #ff004f;
+    color: #3f8ee9;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -297,7 +306,7 @@ nav ul li a:hover::after{
 
 .button.button2 {
     display: inline-block;
-    background: tomato;
+    background: #3f8ee9;
 }
 
 .contact-right form{
@@ -331,7 +340,7 @@ form .button2 {
     color: rgb(67, 67, 67);
 }
 
-/* ----------Mobile Display------------- */
+/* ----------Small Screen Display------------- */
 nav .fa-solid {
     display: none;
 }
@@ -375,13 +384,13 @@ nav .fa-solid {
     .sub-title {
         font-size: 40px;
     }
-    .about-col-1, .about-col-2 {
+    .column-2, .column-1 {
         flex-basis: 100%;
     }
-    .about-col-1 {
+    .column-2 {
         margin-bottom: 30px;
     }
-    .about-col-2 {
+    .column-1 {
         font-size: 15px;
     }
     .tab-links {
